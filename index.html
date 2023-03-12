@@ -7,8 +7,8 @@
     <title>Fase 2</title>
 <style>
    * {
-        text-align: justify;
-        background-color: rgb(32, 205, 218);
+        text-align: center;
+        background-color: rgb(180, 255, 170);
         color: rgb(8, 8, 8);
     }
 </style>
@@ -18,7 +18,7 @@
 
     <header>
         <h1><b> Aprendo sobre Box Model</b></h1>
-
+<hr>
     </header>
     <nav>
         <ul>
@@ -28,15 +28,36 @@
             <li></li><a href="#seccion4"><i> Acerca de</i></a>
         </ul>
     </nav>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- esta es la seccion de la introduccion al tema seleccionado -->
+<hr>
     <section>
 <a name="seccion1"></a>
         <h3>
-            <b> Inicio</b>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <b> Introducción al modelo de caja básico de CSS</b>
+            
         </h3>
+        <p>Al maquetar un documento, el motor de renderizado del navegador representa cada elemento como una caja rectangular, conforme al estándar del modelo de caja básico de CSS. CSS determina el tamaño, la posición y las propiedades (color, fondo, tamaño del borde, etc.) de estas cajas.
+            Cada caja está compuesta de cuatro partes (o áreas), definidas por sus respectivos límites: límite de contenido (content edge) , límite de relleno (padding edge) , límite de borde (border edge) y límite de margen (margin edge) .
+            Área de contenido (content area)
+            El área de contenido o content area, delimitada por el límite de contenido (Content edge en la imagen), contiene el contenido "real" del elemento, como texto, una imagen o un reproductor de video. Sus dimensiones son "content width" o ("content-box width") que hace referencia al ancho del contenido, y "content height" o ("content-box height") que hace referencia al alto. A menudo, tiene un color o una imagen de fondo.
+            Si la propiedad box-sizing está definida como content-box (que es el valor por defecto) y el elemento es un "elemento de bloque", el tamaño del área de contenido puede definirse explícitamente con las propiedades width , min-width , max-width (en-US) , height , min-height y max-height .
+            Área de relleno (padding area)
+            El área de relleno o padding area, delimitada por el límite de relleno (Padding Edge en la imagen), extiende el área de contenido para incluir el relleno del elemento. Sus dimensiones son "padding-box width" para el ancho y "padding-box height" para el alto.
+            El tamaño del relleno viene determinado por las propiedades padding-top , padding-right (en-US) , padding-bottom , padding-left (en-US) y la propiedad resumida padding .
+            Área de borde (border area)
+            El área de borde o border area, delimitada por el límite de borde (Border Edge en la imagen), extiende el área de relleno para incluir los bordes del elemento. Sus dimensiones son "border-box width" para el ancho y "border-box height" para el alto.
+            El espesor de los bordes está determinado por la propiedad border-width y la propiedad resumida border . Si la propiedad box-sizing se establece como border-box , el tamaño del área de borde puede definirse explícitamente con los parámetros width , min-width , max-width (en-US) , height , min-height , max-height. Cuando hay un fondo background-color o background-image establecido en una caja, éste se extiende hasta el límite exterior del borde (es decir, se extiende por debajo del borde en el orden Z). Este comportamiento, que es el que tiene por defecto, puede ser alterado con la propiedad CSS background-clip.
+            Área de margen (margin area)
+            El área de margen o margin area, delimitada por el límite de margen (Margin edge en la imagen), extiende el área de borde para incluir un área vacía, utilizada para separar al elemento del resto de sus vecinos. Sus dimensiones son "margin-box width" para el ancho y "margin-box height" para el alto.
+            El tamaño del área de margen está determinado por las propiedades margin-top (en-US) , margin-right , margin-bottom , margin-left (en-US) y la propiedad resumida margin . Cuando se produce un colapso de margen, el área de margen no está claramente definida ya que los márgenes se comparten entre cajas.
+            Por último, tenga en cuenta que para los elementos en línea no modificados, la cantidad de espacio ocupado (la contribución a la altura de la línea) está determinada por la propiedad line-height , aunque los bordes y el relleno sigan apareciendo alrededor del contenido.
+            Fuente: https://developer.mozilla.org/es/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model
+            </p>
+            <img src="img/css-box-model.jpg" alt="presenta imagen sobre el tema a tratar">
 
     </section>
+    <!-- esta es la seccion del tema seleccionado -->
+<hr>    
 <a name="seccion2"><b> Box Model</b></a>
     <section>
         <p>
@@ -69,25 +90,33 @@
             Cada propiedad afecta el margen en un solo lado de la caja, proporcionando más flexibilidad en la personalización.
             retomado de "https://blog.muktek.com/box-model-d5eb5cda62b8"
         </p>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        
+<hr> 
+
+<!-- esta es la seccion donde se coloca el mockup del sitio  -->
     </section>
 <a name="seccion3"><b> Mockup</b></a>
+    
     <section>
-
+        <img src="img/Mockup.PNG" alt="Imagen del mockup del sitio">
+<hr>
     </section>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
 <a name="seccion4"><b> Acerca de</b></a>
     <section>
-
+        <h5>Ingeniería de Sistemas</h5>
+        <h5>correo intitucional :jaaq@unadvirtual.edu.co</h5>
+        <h5>skype: john.Arturo1</h5>
     </section>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 <hr>
 <footer>
 
     <p>
         Copyright©2023 <br>
         John Arturo <br>
-        Ultima actualización 5 marzo de 2023 <br>
+        Ultima actualización 12 marzo de 2023 <br>
     </p>
 
 </footer>
