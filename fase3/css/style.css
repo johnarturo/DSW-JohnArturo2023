@@ -11,12 +11,12 @@
 
 header {
     grid-area: A;
-    background-color: #21094E;
+    background-color: #714ab9;
 }
 
 nav {
     grid-area: B;
-    background-color: #511281;
+    background-color: #a152dd;
 }
 
 aside {
@@ -47,7 +47,7 @@ footer {
 }
 
 .menu-horizontal a{
-    background-color: black;
+    background-color: rgb(28, 154, 238);
     color: white;
     text-decoration: none;
     padding: 10px 40px;
@@ -63,7 +63,26 @@ footer {
     text-decoration: none;
     padding: 10px 40px;
     margin: 4px;
-    background-color: aqua;
+    background-color: rgb(59, 128, 128);
     color: black;
     display: block;
+}
+
+@media (max-width: 500px) {
+
+    .contenedor {
+        display: grid;
+        grid-template-areas:
+            'A A A A'
+            'B B B B'
+            'D D D D'
+            '. C C .'        
+            'E E E E';
+    
+    }
+
+    footer{
+        background-color: rgb(65, 214, 27);
+    }
+    
 }
