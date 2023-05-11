@@ -6,10 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuestionario</title>
 </head><link rel="stylesheet" href="css/style.css">
+<main>
 <body>
-    <h1 id="resultado">Responda las siguientes preguntas Sobre CCS</h1>
+     
+    <header>
+        <h1 class="centrado">Fase 4 Implementar UNAD 2023</h1>
+    </header>
+    <nav>
+        <ul class="menu-horizontal">
+            <li><a href="index.html">Inicio</a></li>
+                    
+        </ul>
+    </nav>
+    
+       
+    
+    <h1 id="resultado" class="centrado">Responda las siguientes preguntas Sobre CCS</h1>
+    <br>
     <div>
-        <form name="formulario">
+        <aside>
+        <form name="formulario" >
             <h3>1. Que son las CCS:</h3>
 
             <input type="radio" name="r1" value="a"> a. hojas de estilo <br>
@@ -39,12 +55,16 @@
             <input type="radio" name="r5" value="a"> a. Se puede aplicar una regla a todos los elementos que sean de determinada clase <br>
             <input type="radio" name="r5" value="b"> b. Se puede aplicar el estilo que se va a un elemento o etiqueta en concreto  <br>
             <input type="radio" name="r5" value="c"> c. Se puede aplicar el estilo unico al unico elemento de una pagina <br>
-
+            <br>
+            
             <input type="button" value="enviar" onclick="procesarRespuestas()">
-            <input type="button" value="retornar" onclick="retornar()">
+            
+
 
         </form>
+        </aside>
     </div>
+</main>
 <script src="js/script.js"></script>    
 </body>
 </html>
